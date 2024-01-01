@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: outfit;
+}
+
+html, body, main {
+  background-color: hsl(217, 54%, 11%);
+  min-height: 100vh;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  height: 1.5px;
+  background-color: hsl(215, 32%, 27%);
+  border: none;
+}
+
+.image-container {
+  position: relative;
+}
+
+.nft-image {
+  width: 100%;
+  border-radius: 1em;
+  display: block;
+}
+
+.view {
+  position: absolute;
+  inset: 0;
+  background-color: hsl(178, 100%, 50%, .5);
+  border-radius: 1em;
+  opacity: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 150ms ease-in-out;
+}
+
+.view:hover {
+  opacity: 1;
+}
+
+.view img {
+  max-width: 3em;
+  max-height: 3em;
+}
+
+.container {
+  background-color: hsl(216, 50%, 16%);
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 90%;
+  max-width: 20em;
+  padding: 1.2em;
+  border-radius: 1em;
+  box-shadow: 0 1.4em .4em .8em rgba(0, 0, 0, 0.08),
+              0 1.4em .8em 2.5em rgba(0, 0, 0, 0.08);
+}
+
+.nft-name {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.nft-name__link {
+  text-decoration: none;
+  transition: 100ms ease-in-out;
+}
+
+.nft-name__link:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-description {
+  color: hsl(215, 51%, 70%);
+  font-weight: 300;
+}
+
+.price-and-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.flex {
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+
+.price {
+  color: hsl(178, 100%, 50%);
+  font-weight: 600;
+}
+
+.time {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+}
+
+.creator-image {
+  border: 1px solid white;
+  border-radius: 50%;
+  width: 2em;
+}
+
+.creation-of {
+  color: hsl(215, 51%, 70%);
+}
+
+.creator-name {
+  text-decoration: none;
+  cursor: pointer;
+  transition: 100ms ease-in-out;
+}
+
+.creator-name:hover {
+  color: hsl(178, 100%, 50%);
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
